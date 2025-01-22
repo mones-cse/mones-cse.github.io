@@ -1,5 +1,6 @@
 {
   "name": "mones-cse.github.io",
+  "homepage": "https://mones-cse.github.io/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && touch out/.nojekyll && gh-pages -d out -t true"
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d out"
+    
   },
   "dependencies": {
     "next": "15.1.5",
