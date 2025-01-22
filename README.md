@@ -1,3 +1,11 @@
+## Preview
+
+https://mones-cse.github.io/
+
+## Deploy
+
+To deploy run `pnpm run deploy` also never pull or merge from the `gh-pages` branch .
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
