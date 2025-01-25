@@ -1,8 +1,11 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import About from "@/components/About";
+import Experience from "@/components/Experience";
+
 export default function Home() {
   return (
-    <main>
+    <main className="bg-black pb-8">
       <Navbar />
       <div className="container max-w-7xl mx-auto">
         {/* <Hero />
@@ -12,6 +15,8 @@ export default function Home() {
         <div className="bg-green-300 h-64">4</div> */}
         {/* <GridTutorial /> */}
         <Hero />
+        <About />
+        <Experience />
       </div>
     </main>
   );

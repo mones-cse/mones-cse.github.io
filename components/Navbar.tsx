@@ -17,22 +17,22 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white border-b border-gray-200 fixed w-full ">
-      <div className="container mx-auto ">
+    <nav className="bg-black/30 border-white border-opacity-10 border-b  fixed w-full z-10 text-white">
+      <div className="container mx-auto backdrop-blur-md">
         {/* full screen */}
         <div className="max-w-7xl mx-auto h-16 hidden md:flex justify-between items-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="hover:text-gray-600"
+              // className="hover:text-gray-600"
             >
               {link.text}
             </Link>
           ))}
         </div>
         {/* mobile screen */}
-        <div className="max-w-7xl mx-auto h-16  md:hidden flex justify-between items-center">
+        <div className="max-w-7xl mx-auto h-16  md:hidden flex justify-between items-center ">
           <Link href="#home" className="text-xl font-bold">
             Logo
           </Link>
@@ -51,7 +51,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block hover:bg-gray-100  py-2 rounded"
+                  className="block hover:bg-white/20 py-2 rounded"
                 >
                   {link.text}
                 </Link>
@@ -62,55 +62,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
-{
-  /* <div className="container mx-auto">
-<div className="max-w-7xl mx-auto px-4">
-  <div className="flex justify-between h-16">
-    <div className="flex items-center md:hidden">
-      <Link href="#home" className="text-xl font-bold">
-        Logo
-      </Link>
-    </div>
-
-    <button
-      onClick={() => setIsOpen(!isOpen)}
-      className="md:hidden p-2"
-    >
-      {isOpen ? (
-        <AiOutlineClose className="h-6 w-6" />
-      ) : (
-        <AiOutlineMenu className="h-6 w-6" />
-      )}
-    </button>
-
-    <div className="hidden md:flex items-center space-x-4">
-      {navLinks.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          className="hover:text-gray-600"
-        >
-          {link.text}
-        </Link>
-      ))}
-    </div>
-  </div>
-</div>
-{isOpen && (
-  <div className="md:hidden">
-    <div className="px-2 pt-2 pb-3 space-y-1">
-      {navLinks.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          className="block hover:bg-gray-100 px-3 py-2 rounded"
-        >
-          {link.text}
-        </Link>
-      ))}
-    </div>
-  </div>
-)}
-</div> */
 }
