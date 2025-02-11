@@ -1,3 +1,5 @@
+import GlassCard from "./glassCard";
+
 const projects = [
   {
     title: "Document Management System",
@@ -46,14 +48,8 @@ const ProjectCard = ({
   image: string;
 }) => (
   // <div className="bg-white/10 rounded-lg overflow-hidden hover:bg-white/20 transition-colors duration-200 group">
-  <div
-    className=" 
-                       overflow-hidden p-2 relative h-full w-full
-                       bg-white/[0.03] rounded-lg
-                       shadow-[0_9px_14px_rgba(0,0,0,0.25),inset_7px_4px_26px_rgba(255,255,255,0.09)]
-                       border border-black/10
-                       transition-colors duration-200 group hover:bg-white/5
-                       "
+  <GlassCard
+    
   >
     <div className="w-full h-48 relative overflow-hidden bg-white/10">
       <img
@@ -89,7 +85,7 @@ const ProjectCard = ({
         ))}
       </div>
     </div>
-  </div>
+  </GlassCard>
 );
 
 const Projects = () => {

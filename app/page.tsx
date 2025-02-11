@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import AwardsSection from "@/components/Awards";
+import Education from "@/components/education";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <AwardsSection />
+        <Education/>
       </div>
     </main>
   );
