@@ -47,7 +47,7 @@ const tubLight = {
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-8 sm:grid-cols-12 p-4 pt-16 text-center items-center bg-black text-orange-300">
+    <div className="grid grid-cols-8 sm:grid-cols-12 p-4 pt-16 text-center items-center bg-black text-[#ffcec2]">
       <div className="col-span-12  flex justify-center">
         <div className="bg-orange-300 w-[316px] h-1" style={tubLight}></div>
       </div>
@@ -112,7 +112,7 @@ const Hero = () => {
       </div>
       <div className="col-start-2 col-span-6 sm:col-start-0 sm:col-span-6 h-full min-h-16  border-white border-opacity-10 border-b border-l border-r relative flex items-start justify-center p-4">
         <Stars />
-        <p className="text-[132px]">Mones</p>
+        <p className="text-[132px] ">Mones</p>
       </div>
       <div className="hidden sm:block h-full border-white border-opacity-10 border-b">
         {/* 14 */}
@@ -168,7 +168,7 @@ const Hero = () => {
         >
           <div className="absolute inset-0 bg-black opacity-75 group-hover:opacity-75" />
 
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 " />
           <span className="relative z-10 text-white font-medium">
             Download CV
           </span>

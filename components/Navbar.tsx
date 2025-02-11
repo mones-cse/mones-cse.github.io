@@ -17,7 +17,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-black/30 border-white border-opacity-10 border-b  fixed w-full z-10 text-white">
+    <nav className="bg-[#000] border-white border-opacity-10 border-b  fixed w-full z-10 text-white">
       <div className="container mx-auto backdrop-blur-md">
         {/* full screen */}
         <div className="max-w-7xl mx-auto h-16 hidden md:flex justify-between items-center">

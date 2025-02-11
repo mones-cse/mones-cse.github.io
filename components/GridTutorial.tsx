@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { cn } from "../utils/cn";
 const GridTutorial = () => {
-  const [activeDemo, setActiveDemo] = useState("basic");
+  const [activeDemo, setActiveDemo] = useState<keyof typeof demos>("basic");
 
   const blr =
     "border-solid border-gray-400 p-4 text-black text-center col-span-4 md:col-span-6";
@@ -183,7 +183,7 @@ const GridTutorial = () => {
       </div>
 
       <div className="border-solid border border-gray-400 rounded-lg shadow-sm">
-        {demos[activeDemo]}
+        {demos[activeDemo as keyof typeof demos]}
       </div>
 
       <div className="bg-gray-100 p-4 rounded">

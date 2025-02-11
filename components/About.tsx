@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="text-gray-100 font-light flex flex-col max-w-xl mx-auto justify-center text-center gap-8 mb-10">
-      <p className="text-3xl font-semibold">About</p>
+    <div className="text-white/50 font-light flex flex-col max-w-2xl mx-auto justify-center text-center gap-8 mb-10">
+      <p className="text-3xl font-semibold text-white">About</p>
       <p>
         I am focused on JS, TS, React, Next.js, Node.js, and Python, working
         across both front-end and back-end development. Over the years, I’ve

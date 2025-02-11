@@ -23,15 +23,22 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <div className="max-w-xl  mx-auto text-center text-white flex flex-col gap-2 mb-10">
-      <p className="text-3xl mb-4">Experience</p>
+    <div className="max-w-2xl mx-auto text-center text-white flex flex-col gap-2 mb-10">
+      <p className="text-3xl font-semibold mb-4">Experience</p>
       <div className="grid grid-cols-2 gap-4 mx-auto text-start w-full">
         {experienceData.map((data, index) => (
-          <div key={index} className="bg-white/5 p-2 rounded-md backdrop-blur">
-            <div>
-              <p>{data.title}</p>
-              <p>{data.company}</p>
-              <p>{data.date}</p>
+          <div
+            key={index}
+            className="flex flex-row flex-nowrap items-end content-end 
+                       justify-start overflow-hidden p-5 relative h-full w-full
+                       bg-white/[0.03] rounded-lg
+                       shadow-[0_9px_14px_rgba(0,0,0,0.25),inset_7px_4px_26px_rgba(255,255,255,0.09)]
+                       border border-black/10"
+          >
+            <div className="flex flex-col gap-2">
+              <p className="text-base">{data.title}</p>
+              <p className="text-sm opacity-80">{data.company}</p>
+              <p className="text-xs opacity-60">{data.date}</p>
             </div>
           </div>
         ))}
