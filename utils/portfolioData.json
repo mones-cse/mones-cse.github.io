@@ -1,0 +1,98 @@
+{
+    "education" : [
+        {
+          "degree": "Master's in Computer Science & Engineering",
+          "institution": "United International University (UIU)",
+          "year": "2021 - 2022"
+        },
+        {
+          "degree": "Bachelor's in Computer Science & Engineering",
+          "institution": "Ahsanullah University of Science and Technology",
+          "year": "2010 - 2015"
+        }
+      ],
+      "awards":[
+        {
+          "title": "Longhash X Accelerator",
+          "organization": "Dosier",
+          "description": "Decentralized Content Delivery",
+          "year": "2022",
+          "logo": "/awards/logo-long-hash.png"
+        },
+        {
+          "title": "National ICT Award (Big Data Analytics)",
+          "organization": "Cramstack",
+          "description": "Power Analytics",
+          "year": "2019",
+          "logo": "/awards/logo-ict.png"
+        },
+        {
+          "title": "Rockstart AI Accelerator (Netherlands)",
+          "organization": "Cramstack",
+          "description": "Search Driven Data Analytics (NLQ) Platform (Batch 2 Alumni)",
+          "year": "2018",
+          "logo": "/awards/logo-rock-start.png"
+        },
+        {
+          "title": "Echelon 100 (Singapore) National Champion",
+          "organization": "Cramstack",
+          "description":"Search Driven Data Analytics (NLQ) Platform",
+          "year": "2018",
+          "logo": "/awards/logo-e27.png"
+        },
+        {
+          "title": "Microsoft Imagine Cup 2015 National Champion",
+          "organization": "Karigor",
+          "description": "Smoking Bad (Game). 3D ide Scroller Game",
+          "year": "2015",
+          "logo": "/awards/logo-imagine-cup.png"
+        },
+        {
+          "title": "Microsoft Imagine Cup 2014 National Champion",
+          "organization": "Karigor",
+          "description": "!prince charming (Game). 3D First Person Game",
+          "year": "2014",
+          "logo": "/awards/logo-imagine-cup.png"
+        }
+      ],
+      "projects" : [
+        {
+          "title": "Dolpin",
+          "description": "A decentralized and encrypted storage layer built with IPFS/Filecoin, enabling secure file sharing. Designed to back up valuable NFTs and digital assets with enhanced privacy and security.",
+          "preview": "/projects/dolpin.png"
+        },
+        {
+          "title": "DMS (Document Management System)",
+          "description": "A system allows secure role-based access to digital records and converts physical documents to digital using Tesseract OCR, streamlining document management and improving efficiency for a bank.",
+          "preview": "/projects/dms.png"
+        },
+        {
+          "title": "NLQ",
+          "description": "An analytics platform with a natural language-driven search interface, enabling users to analyze and visualize data through simple queries with virtually no learning curve. Designed to simplify data insights through intuitive querying and visualization tools.",
+          "preview": "/projects/cramstack.png"
+        }
+      ],
+      "experience":[
+        {
+          "company": "Dosier",
+          "position": "Co-Founder & CTO",
+          "year": "2022 - Present"
+        },
+        {
+          "company": "Cramstack",
+          "position": "Technical Lead",
+          "year": "2017 - 2022"
+        },
+        {
+          "company": "Inovio",
+          "position": "Software Engineer",
+          "year": "2016"
+        },
+        {
+          "company": "Pechas Game Studio",
+          "position": "Game Developer",
+          "year": "2014 - 2015"
+        }
+      ]
+    
+}
