@@ -90,15 +90,13 @@ const ProjectCard = ({
 
 const Projects = () => {
   return (
-    <section className="py-8 " id="project">
-      <div className="max-w-2xl mx-auto ">
-        <h2 className="text-3xl font-bold text-white mb-8">Projects</h2>
+    <section className="pt-4 mb-10 px-2.5 max-w-2xl  mx-auto" id="project">
+        <h2 className="text-3xl font-bold text-white mb-4 text-center">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
         </div>
-      </div>
     </section>
   );
 };

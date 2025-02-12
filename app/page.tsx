@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="bg-black pb-8">
+      <main className="bg-black">
         <div className="container max-w-7xl mx-auto">
           <Hero />
           <About />

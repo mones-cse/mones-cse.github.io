@@ -11,18 +11,18 @@ export default function Navbar() {
     { href: "#about", text: "About" },
     { href: "#experience", text: "Experience" },
     { href: "#project", text: "Project" },
-    // { href: "#skill", text: "Skill" },
     { href: "#awards", text: "Awards" },
     { href: "#education", text: "Education" },
-    // { href: "#contact", text: "Contact" },
   ];
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const targetElement = document.querySelector(href);
     if (targetElement) {
+      const navbarHeight = 64; // Reduced from 64 to 48 for better positioning
+      const elementPosition = (targetElement as HTMLElement).offsetTop - navbarHeight;
       window.scrollTo({
-        top: (targetElement as HTMLElement).offsetTop,
+        top: elementPosition,
         behavior: "smooth",
       });
     }
