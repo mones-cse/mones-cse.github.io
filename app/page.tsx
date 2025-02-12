@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="bg-primary_bg">
+      <main className="bg-primary_bg min-w-full">
         <div className="container max-w-7xl mx-auto">
           <Hero />
           <About />

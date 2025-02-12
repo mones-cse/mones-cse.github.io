@@ -57,19 +57,35 @@
       ],
       "projects" : [
         {
-          "title": "Dolpin",
-          "description": "A decentralized and encrypted storage layer built with IPFS/Filecoin, enabling secure file sharing. Designed to back up valuable NFTs and digital assets with enhanced privacy and security.",
-          "preview": "/projects/dolpin.png"
+          "title": "DMS",
+          "description":
+            "Developed document management system for a bank, this system allows secure role based access to digital records and converts physical documents to digital using Tesseract OCR",
+          "technologies": ["React", "TypeScript", "Base Web", "Tesseract OCR"],
+          "link": "#",
+          "image": "/dms-bg.png"
         },
         {
-          "title": "DMS (Document Management System)",
-          "description": "A system allows secure role-based access to digital records and converts physical documents to digital using Tesseract OCR, streamlining document management and improving efficiency for a bank.",
-          "preview": "/projects/dms.png"
+          "title": "Dolpin",
+          "description":
+            "A decentralized and encrypted storage layer built with IPFS/Filecoin, enabling secure file sharing. Designed to back up valuable NFTs and digital assets with enhanced privacy and security.",
+          "technologies": ["React", "IPFS", "Node", "AWS", "TypeScript"],
+          "link": "https://example.com/project2",
+          "image": "/dolpin-bg.png"
         },
         {
           "title": "NLQ",
-          "description": "An analytics platform with a natural language-driven search interface, enabling users to analyze and visualize data through simple queries with virtually no learning curve. Designed to simplify data insights through intuitive querying and visualization tools.",
-          "preview": "/projects/cramstack.png"
+          "description":
+            "Developed an analytics platform with a natural language-driven search interface, enabling users to analyze and visualize data with virtually no learning curve. Designed to simplify data insights through intuitive querying and visualization tools.",
+          "technologies": [
+            "React",
+            "D3.js",
+            "Node.js",
+            "Python",
+            "Ant Design",
+            "Django"
+          ],
+          "link": "https://example.com/project3",
+          "image": "/cramstack-bg.png"
         }
       ],
       "experience":[

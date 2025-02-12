@@ -1,38 +1,6 @@
 import GlassCard from "./GlassCard";
-
-const projects = [
-  {
-    title: "Document Management System",
-    description:
-      "Developed for a bank, this system allows secure role based access to digital records and converts physical documents to digital using Tesseract OCR, streamlining document management and improving efficiency",
-    technologies: ["React", "TypeScript", "Base Web", "Tesseract OCR"],
-    link: "#",
-    image: "/dms-bg.png", // Using placeholder for demo
-  },
-  {
-    title: "Dolpin",
-    description:
-      "A decentralized and encrypted storage layer built with IPFS/Filecoin, enabling secure file sharing. Designed to back up valuable NFTs and digital assets with enhanced privacy and security.",
-    technologies: ["React", "IPFS", "Node", "AWS", "TypeScript"],
-    link: "https://example.com/project2",
-    image: "/dolpin-bg.png", // Using placeholder for demo
-  },
-  {
-    title: "NLQ",
-    description:
-      "Developed an analytics platform with a natural language-driven search interface, enabling users to analyze and visualize data with virtually no learning curve. Designed to simplify data insights through intuitive querying and visualization tools.",
-    technologies: [
-      "React",
-      "D3.js",
-      "Node.js",
-      "Python",
-      "Ant Design",
-      "Django",
-    ],
-    link: "https://example.com/project3",
-    image: "/cramstack-bg.png", // Using placeholder for demo
-  },
-];
+import portfolioData from '../utils/portfolioData.json'
+const projects = portfolioData.projects;
 
 const ProjectCard = ({
   title,
@@ -47,10 +15,8 @@ const ProjectCard = ({
   link: string;
   image: string;
 }) => (
-  // <div className="bg-white/10 rounded-lg overflow-hidden hover:bg-white/20 transition-colors duration-200 group">
-  <GlassCard
-    
-  >
+
+  <GlassCard>
     <div className="w-full h-48 relative overflow-hidden bg-white/10">
       <img
         src={image}
@@ -59,21 +25,21 @@ const ProjectCard = ({
       />
     </div>
 
-    <div className="pt-6 pb-2">
-      <div className="flex justify-between items-start mb-4">
-        <h3 className="text-xl font-semibold text-white">{title}</h3>
-        {link && (
+    <div className="py-2 ">
+      <div className="flex justify-between items-start">
+        <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+        {/* {link && (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-300"
           >
-            {/* <ExternalLink size={20} /> */}
+            <ExternalLink size={20} />
           </a>
-        )}
+        )} */}
       </div>
-      <p className=" mb-4 text-sm text-secondary_text">{description}</p>
+      <p className=" mb-2 text-sm text-secondary_text font-light">{description}</p>
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech, index) => (
           <span

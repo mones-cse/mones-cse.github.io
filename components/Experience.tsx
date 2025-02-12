@@ -30,7 +30,7 @@ const Experience = () => {
       <div className="grid grid-cols-2 gap-4 mx-auto text-start w-full">
         {experienceData.map((data, index) => (
           <GlassCard key={index}>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col">
               <p className="text-base">{data.title}</p>
               <p className="text-sm opacity-80 text-secondary_text">{data.company}</p>
               <p className="text-xs opacity-60 text-secondary_text">{data.date}</p>
