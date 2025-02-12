@@ -132,7 +132,7 @@ const Hero = () => {
       </div>
       <div className="col-start-2 col-span-6 sm:col-start-0 sm:col-span-6 h-full min-h-16  border-white border-opacity-10 border-b border-l border-r relative flex items-start justify-center p-4">
         <Stars />
-        <p className="text-[132px] ">Mones</p>
+        <p className="text-7xl md:text-[132px] ">Mones</p>
       </div>
       <div className="hidden sm:block h-full border-white border-opacity-10 border-b">
         {/* 14 */}

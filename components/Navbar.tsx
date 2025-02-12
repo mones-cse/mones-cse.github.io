@@ -39,8 +39,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-primary_bg/80 border-white border-opacity-10 border-b  fixed w-full z-10 text-white backdrop-blur-md">
-      <div className="container mx-auto ">
+    <nav className="px-2 bg-primary_bg/80 border-white border-opacity-10 border-b  fixed w-screen z-10 text-white backdrop-blur-md">
+      <div className="mx-auto ">
         <motion.div
         className="absolute bg-white rounded-md h-[2px] bottom-0 hidden md:block"
         style={{
@@ -57,7 +57,7 @@ export default function Navbar() {
         }}
         />
         {/* full screen */}
-        <div className="max-w-7xl mx-auto h-16 hidden md:flex justify-around items-center gap-4">
+        <div className="mx-auto h-16 hidden md:flex justify-around items-center gap-4">
           {navLinks.map((link) => (
             <div key={link.href} className="w-full text-center">
               <a href={link.href} onClick={(e) => handleLinkClick(e, link.href,link.id)}>
@@ -67,7 +67,7 @@ export default function Navbar() {
           ))}
         </div>
         {/* mobile screen */}
-        <div className="max-w-7xl mx-auto h-16  md:hidden flex justify-between items-center  ">
+        <div className=" mx-auto h-16  md:hidden flex justify-between items-center">
           <Link href="#home" className="text-xl font-bold">
             Logo
           </Link>
@@ -80,7 +80,7 @@ export default function Navbar() {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden max-w-7xl text-center ">
+          <div className="md:hidden  text-center ">
             <div className="mx-auto pt-2 pb-3 space-y-1">
               {navLinks.map((link) => (
                 <a

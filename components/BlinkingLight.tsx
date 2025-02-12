@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
 const BlinkingLight = () => {
+
   return (
-    <div className="w-[650px] h-z[327px] top-0 absolute blur-[19px]">
+    <div className="w-full  top-0 absolute blur-[19px] flex items-center justify-center">
       <img
         src="/light.svg"
         alt="Light"
-        className={`w-full max-w-2xl h-80 blur-lg animate-tubelight
+        className={`w-full max-w-2xl h-80 blur-lg animate-tubelight 
           
         `}
       />

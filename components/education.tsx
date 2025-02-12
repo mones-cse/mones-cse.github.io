@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <section className="flex flex-col items-center max-w-2xl mx-auto px-2.5  pt-4 pb-10" id="education">
       <h1 className="text-4xl mb-4 text-primary_text">Education</h1>
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         {eductionData.map((item, index) => (
           <GlassCard key={index}>
             <p className="text-base text-primary_text">{item.degree}</p>
