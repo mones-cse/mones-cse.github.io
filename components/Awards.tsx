@@ -6,7 +6,7 @@ import GlassCard from "./glassCard";
 const Award = () => {
   const awardData = portFolioData.awards;
   return (
-    <section className="flex flex-col items-center max-w-2xl justify-center py-5 px-2.5 mx-auto">
+    <section className="flex flex-col items-center max-w-2xl justify-center py-5 px-2.5 mx-auto" id="awards">
       <h1 className="text-4xl mb-4">Awards</h1>
       <br />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4 w-full">

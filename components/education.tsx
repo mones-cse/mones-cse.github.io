@@ -4,7 +4,7 @@ import GlassCard from "./glassCard";
 const Education = () => {
   const eductionData = portFolioData.education;
   return (
-    <section className="flex flex-col items-center max-w-2xl mx-auto py-5 px-2.5">
+    <section className="flex flex-col items-center max-w-2xl mx-auto py-5 px-2.5" id="education">
       <h1 className="text-4xl mb-4">Education</h1>
       <br />
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 w-full">
