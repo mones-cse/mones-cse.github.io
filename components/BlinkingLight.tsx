@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
-
+import Image from "next/image";
 const BlinkingLight = () => {
 
   return (
     <div className="w-full  top-0 absolute blur-[19px] flex items-center justify-center">
-      <img
+      <Image
         src="/light.svg"
         alt="Light"
+        width={0}
+        height={0}
         className={`w-full max-w-2xl h-80 blur-lg animate-tubelight 
           
         `}
