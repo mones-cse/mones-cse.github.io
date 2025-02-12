@@ -1,8 +1,8 @@
-import portFolioData from "../utils/portFolioData.json";
+import portfolioData from "../utils/portfolioData.json";
 import GlassCard from "./GlassCard";
 
 const Education = () => {
-  const eductionData = portFolioData.education;
+  const eductionData = portfolioData.education;
   return (
     <section className="flex flex-col items-center max-w-2xl mx-auto px-2.5  pt-4 pb-10" id="education">
       <h1 className="text-4xl mb-4 text-primary_text">Education</h1>

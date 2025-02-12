@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portFolioData from "../utils/portFolioData.json";
+import portFolioData from "../utils/portfolioData.json";
 import GlassCard from "./GlassCard";
 
 //todo: image ratio change images
