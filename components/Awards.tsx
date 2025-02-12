@@ -1,6 +1,6 @@
 import Image from "next/image";
 import portFolioData from "../utils/portFolioData.json";
-import GlassCard from "./glassCard";
+import GlassCard from "./GlassCard";
 
 //todo: image ratio change images
 const Award = () => {

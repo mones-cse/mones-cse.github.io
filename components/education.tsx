@@ -1,5 +1,5 @@
 import portFolioData from "../utils/portFolioData.json";
-import GlassCard from "./glassCard";
+import GlassCard from "./GlassCard";
 
 const Education = () => {
   const eductionData = portFolioData.education;

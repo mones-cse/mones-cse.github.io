@@ -1,19 +1,9 @@
-- basic setup inlcluding tailwind
-- change config for deploy via `gh-pages` branch
-- top navigation bar skeleton
-
----
-
----
-
-- home section
-- about section
-- project section
-- skills section
-- experience section
-- education section
-- contact section
-- fetch data from json data
-- top navigation bar ui
-- animation
-- responsive design
+- footer link add
+- light effect 
+- experience spacing change
+- Projects spacing change
+- all component need to show info from json data
+- mobile friendly
+- tab friendly 
+- desktop friendly 
+- partical effect 

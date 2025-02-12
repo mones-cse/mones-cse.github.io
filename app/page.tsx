@@ -4,8 +4,8 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import AwardsSection from "@/components/Awards";
-import Education from "@/components/education";
-import Footer from "@/components/footer";
+import Education from "@/components/Education";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import GlassCard from "./glassCard";
+import GlassCard from "./GlassCard";
 
 const projects = [
   {

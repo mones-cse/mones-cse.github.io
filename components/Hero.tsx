@@ -1,3 +1,7 @@
+"use client";
+import { useState, useEffect } from 'react';
+import BlinkingLight from './BlinkingLight';
+
 const Stars = () => {
   return (
     <>
@@ -45,11 +49,25 @@ const tubLight = {
 // #ffaa6e
 // use https://github.com/tsparticles/react#readme for particles
 
+
+
 const Hero = () => {
+
+
+
   return (
-    <div className="grid grid-cols-8 sm:grid-cols-12 p-4 pt-16 text-center items-center bg-primary_bg text-[#ffcec2]" id="home">
+    <div className="grid grid-cols-8 sm:grid-cols-12 pt-16 text-center items-center bg-primary_bg text-[#ffcec2]" id="home">
+      <div className="absolute inset-0 flex items-top justify-center top-0 ">
+        <BlinkingLight/>
+      {/* <img 
+          src="/light.svg" 
+          alt="Light" 
+          className={`w-[650px] h-z[327px] top-0 absolute blur-[19px] ${isBlinking ? 'animate-ping' : ''}`}
+        /> */}
+      </div>
       <div className="col-span-12  flex justify-center">
-        <div className="bg-orange-300 w-[316px] h-1" style={tubLight}></div>
+        <div className="bg-orange-300 w-[316px] h-1 relative" style={tubLight}></div>
+        
       </div>
       {/* 1st row */}
       <div
@@ -67,6 +85,8 @@ const Hero = () => {
         style={toTop}
       >
         {/* 3 */}
+        
+      
       </div>
       <div className="hidden sm:block h-full border-white border-opacity-10 border-b">
         {/* 4 */}
