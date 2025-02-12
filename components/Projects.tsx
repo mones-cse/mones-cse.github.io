@@ -73,7 +73,7 @@ const ProjectCard = ({
           </a>
         )}
       </div>
-      <p className="text-gray-300 mb-4">{description}</p>
+      <p className=" mb-4 text-sm text-secondary_text">{description}</p>
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech, index) => (
           <span
@@ -91,7 +91,7 @@ const ProjectCard = ({
 const Projects = () => {
   return (
     <section className="pt-4 mb-10 px-2.5 max-w-2xl  mx-auto" id="project">
-        <h2 className="text-3xl font-bold text-white mb-4 text-center">Projects</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center text-primary_text">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />

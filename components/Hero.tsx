@@ -47,7 +47,7 @@ const tubLight = {
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-8 sm:grid-cols-12 p-4 pt-16 text-center items-center bg-black text-[#ffcec2]" id="home">
+    <div className="grid grid-cols-8 sm:grid-cols-12 p-4 pt-16 text-center items-center bg-primary_bg text-[#ffcec2]" id="home">
       <div className="col-span-12  flex justify-center">
         <div className="bg-orange-300 w-[316px] h-1" style={tubLight}></div>
       </div>
