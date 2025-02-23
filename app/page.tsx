@@ -6,7 +6,8 @@ import Projects from "@/components/Projects";
 import AwardsSection from "@/components/Awards";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
-import CAward from "@/components/CAwards";
+
+import FancyText from "@/components/FancyText";
 
 export default function Home() {
   return (
