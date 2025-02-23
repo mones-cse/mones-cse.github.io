@@ -57,7 +57,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="grid grid-cols-8 sm:grid-cols-12 pt-16 text-center items-center bg-primary_bg text-[#ffcec2]"
+        className="grid grid-cols-8 sm:grid-cols-12 pt-16 text-center items-center text-[#ffcec2]"
         id="home"
       >
         <div className="absolute inset-0 flex items-top justify-center top-0 ">

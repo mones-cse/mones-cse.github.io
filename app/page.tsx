@@ -4,17 +4,17 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import AwardsSection from "@/components/Awards";
-import Education from "@/components/Education";
-import Footer from "@/components/Footer";
-
-import FancyText from "@/components/FancyText";
+import Education from "@/components/education";
+import Footer from "@/components/footer";
+import BlobEffect from "@/components/BlobEffect";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+      <BlobEffect />
       <main className="bg-primary_bg w-full">
-        <div className="container max-w-7xl mx-auto">
+        <div className="container max-w-7xl mx-auto relative">
           <Hero />
           <About />
           <Experience />
