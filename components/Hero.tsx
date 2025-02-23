@@ -1,6 +1,6 @@
-"use client";
-
+// "use client";
 import BlinkingLight from './BlinkingLight';
+import CustomParticles from './CustomParticles';
 
 const Stars = () => {
   return (
@@ -46,24 +46,26 @@ const tubLight = {
     "linear-gradient(90deg,rgba(0,0,0,0) 0%, rgb(0,0,0) 50%,rgba(0,0,0,0) 100%)",
 };
 
-// #ffaa6e
-// use https://github.com/tsparticles/react#readme for particles
+
 
 
 
 const Hero = () => {
 
+  
+
 
 
   return (
+    <div className="relative h-auto overflow-hidden">
+      <div className="absolute inset-0"> {/* Particle container */}
+         <CustomParticles/>
+      </div>
+    
     <div className="grid grid-cols-8 sm:grid-cols-12 pt-16 text-center items-center bg-primary_bg text-[#ffcec2]" id="home">
+     
       <div className="absolute inset-0 flex items-top justify-center top-0 ">
         <BlinkingLight/>
-      {/* <img 
-          src="/light.svg" 
-          alt="Light" 
-          className={`w-[650px] h-z[327px] top-0 absolute blur-[19px] ${isBlinking ? 'animate-ping' : ''}`}
-        /> */}
       </div>
       <div className="col-span-12  flex justify-center">
         <div className="bg-orange-300 w-[316px] h-1 relative" style={tubLight}></div>
@@ -201,6 +203,7 @@ const Hero = () => {
       >
         {/* 25 */}
       </div>
+    </div>
     </div>
   );
 };
