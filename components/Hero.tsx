@@ -2,6 +2,7 @@
 import BlinkingLight from "./BlinkingLight";
 import CustomParticles from "./CustomParticles";
 import FancyText from "./FancyText";
+import Link from "next/link";
 
 const Stars = () => {
   return (
@@ -183,17 +184,13 @@ const Hero = () => {
           className="col-start-2 col-span-6 sm:col-start-0 sm:col-span-6 h-full min-h-16 border-white border-opacity-10 border-l border-r flex items-start justify-center gap-2 px-2 pt-4 pb-8"
           style={toBottom}
         >
-          <button
-            className="px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full 
-        relative overflow-hidden group transition-all duration-300 boder border-yellow-500 shadow-sm hover:scale-105"
+          <Link
+            href={"/cv.pdf"}
+            target="_blank"
+            className="px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full border-white border-opacity-10 shadow-sm hover:scale-105 z-10"
           >
-            <div className="absolute inset-0 bg-black opacity-75 group-hover:opacity-75" />
-
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 " />
-            <span className="relative z-10 text-white font-medium">
-              Download CV
-            </span>
-          </button>
+            <span className="relative text-white font-medium">Download CV</span>
+          </Link>
         </div>
         <div className="hidden sm:block h-full">{/* 24 */}</div>
         <div
@@ -208,3 +205,13 @@ const Hero = () => {
 };
 
 export default Hero;
+
+{
+  /* <a
+href="/mones_cv.pdf"
+className="bg-white flex items-center gap-1 text-black font-bold py-3 px-7 rounded-full hover:scale-105 transition duration-100 ease-in-out border-[1px] border-black border-opacity-10"
+>
+Download CV
+<AiOutlineDownload size="1.25rem" />
+</a> */
+}
