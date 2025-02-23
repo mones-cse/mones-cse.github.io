@@ -180,17 +180,26 @@ const Hero = () => {
           {/* 21 */}
         </div>
         <div className="hidden sm:block h-full">{/* 22 */}</div>
-        <div
-          className="col-start-2 col-span-6 sm:col-start-0 sm:col-span-6 h-full min-h-16 border-white border-opacity-10 border-l border-r flex items-start justify-center gap-2 px-2 pt-4 pb-8"
-          style={toBottom}
-        >
-          <Link
-            href={"/cv.pdf"}
-            target="_blank"
-            className="px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full border-white border-opacity-10 shadow-sm hover:scale-105 z-10"
-          >
-            <span className="relative text-white font-medium">Download CV</span>
-          </Link>
+        {/* Position 23 - Keep grid position and add mask-container */}
+        <div className="col-start-2 col-span-6 sm:col-start-0 sm:col-span-6 relative">
+          {/* Background container with gradient mask */}
+          <div
+            className="absolute inset-0 border-white border-opacity-10 border-l border-r"
+            style={toBottom}
+          ></div>
+
+          {/* Button container - positioned above the mask */}
+          <div className="relative flex items-center justify-center h-full py-8">
+            <Link
+              href={"/cv.pdf"}
+              target="_blank"
+              className="px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full border-white border-opacity-10 shadow-sm hover:scale-105 transition-all duration-300"
+            >
+              <span className="relative text-white font-medium">
+                Download CV
+              </span>
+            </Link>
+          </div>
         </div>
         <div className="hidden sm:block h-full">{/* 24 */}</div>
         <div
@@ -205,13 +214,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-{
-  /* <a
-href="/mones_cv.pdf"
-className="bg-white flex items-center gap-1 text-black font-bold py-3 px-7 rounded-full hover:scale-105 transition duration-100 ease-in-out border-[1px] border-black border-opacity-10"
->
-Download CV
-<AiOutlineDownload size="1.25rem" />
-</a> */
-}
