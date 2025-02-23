@@ -6,6 +6,7 @@ import Projects from "@/components/Projects";
 import AwardsSection from "@/components/Awards";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
+import CAward from "@/components/CAwards";
 
 export default function Home() {
   return (
@@ -18,10 +19,10 @@ export default function Home() {
           <Experience />
           <Projects />
           <AwardsSection />
-          <Education/>
+          <Education />
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
