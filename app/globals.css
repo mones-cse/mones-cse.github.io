@@ -19,3 +19,14 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.hidden_v {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s;
+}
+
+.show_v {
+  opacity: 1;
+  transform: translateY(0);
+}

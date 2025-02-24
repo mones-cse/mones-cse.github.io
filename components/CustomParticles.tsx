@@ -2,7 +2,7 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, MoveDirection, OutMode } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 
 const CustomParticles = () => {
   useEffect(() => {

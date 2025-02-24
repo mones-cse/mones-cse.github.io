@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import portFolioData from "../utils/portfolioData.json";
 import GlowingCard from "./GlowingCard";
+import { AnimateOnScroll } from "./AnimateOnScroll";
 // Types
 interface CardProps {
   title: string;
@@ -54,13 +55,15 @@ const AwardsSection: React.FC = () => {
   const awardData = portFolioData.awards;
 
   return (
-    <section
-      className="flex flex-col items-center max-w-2xl justify-center pt-4 px-2.5 mx-auto mb-10"
-      id="awards"
-    >
-      <h1 className="text-4xl mb-4 text-primary_text">Awards</h1>
-      <CardsGrid awards={awardData} />
-    </section>
+    <AnimateOnScroll>
+      <section
+        className="flex flex-col items-center max-w-2xl justify-center pt-4 px-2.5 mx-auto mb-10"
+        id="awards"
+      >
+        <h1 className="text-4xl mb-4 text-primary_text">Awards</h1>
+        <CardsGrid awards={awardData} />
+      </section>
+    </AnimateOnScroll>
   );
 };
 
