@@ -55,11 +55,8 @@ const AwardsSection: React.FC = () => {
   const awardData = portFolioData.awards;
 
   return (
-    <AnimateOnScroll>
-      <section
-        className="flex flex-col items-center max-w-2xl justify-center pt-4 px-2.5 mx-auto mb-10"
-        id="awards"
-      >
+    <AnimateOnScroll id="awards">
+      <section className="flex flex-col items-center max-w-2xl justify-center pt-4 px-2.5 mx-auto mb-10">
         <h1 className="text-4xl mb-4 text-primary_text">Awards</h1>
         <CardsGrid awards={awardData} />
       </section>

@@ -4,10 +4,9 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import AwardsSection from "@/components/Awards";
-import Education from "@/components/education";
+import Education from "@/components/Education";
 import Footer from "@/components/footer";
 import BlobEffect from "@/components/BlobEffect";
-import { AnimateOnScroll } from "@/components/AnimateOnScroll";
 
 export default function Home() {
   return (

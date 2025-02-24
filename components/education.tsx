@@ -5,11 +5,8 @@ import GlowingCard from "./GlowingCard";
 const Education = () => {
   const eductionData = portfolioData.education;
   return (
-    <AnimateOnScroll>
-      <section
-        className="flex flex-col items-center max-w-2xl mx-auto px-2.5  pt-4 pb-10"
-        id="education"
-      >
+    <AnimateOnScroll id={"education"}>
+      <div className="flex flex-col items-center max-w-2xl mx-auto px-2.5  pt-4 pb-10">
         <h1 className="text-4xl mb-4 text-primary_text">Education</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
           {eductionData.map((item, index) => (
@@ -24,7 +21,7 @@ const Education = () => {
             </GlowingCard>
           ))}
         </div>
-      </section>
+      </div>
     </AnimateOnScroll>
   );
 };

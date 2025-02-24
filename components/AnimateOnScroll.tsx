@@ -12,6 +12,7 @@ interface AnimateOnScrollProps {
   className?: string;
   threshold?: number;
   once?: boolean;
+  id?: string;
 }
 
 const timingMap = {
@@ -34,6 +35,7 @@ export const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
   className = "",
   threshold = 0.1,
   once = true,
+  id = "",
 }) => {
   const elementRef = useRef<HTMLDivElement>(null);
   const hasAnimated = useRef<boolean>(false);
@@ -88,7 +90,7 @@ export const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
   );
 
   return (
-    <div ref={elementRef} className={baseClasses}>
+    <div ref={elementRef} className={baseClasses} id={id}>
       {children}
     </div>
   );

@@ -64,8 +64,8 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = portfolioData.projects;
   return (
-    <AnimateOnScroll>
-      <section className="pt-4 mb-10 px-2.5 max-w-2xl  mx-auto" id="project">
+    <AnimateOnScroll id="project">
+      <section className="pt-4 mb-10 px-2.5 max-w-2xl  mx-auto">
         <h2 className="text-3xl font-bold mb-4 text-center text-primary_text">
           Projects
         </h2>
