@@ -26,7 +26,7 @@ export default function Navbar() {
     e.preventDefault();
     const targetElement = document.querySelector(href);
     if (targetElement) {
-      const navbarHeight = 64; // Reduced from 64 to 48 for better positioning
+      const navbarHeight = 64;
       const elementPosition =
         (targetElement as HTMLElement).offsetTop - navbarHeight;
       window.scrollTo({
@@ -44,8 +44,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="px-2 bg-primary_bg/80 border-white border-opacity-10 border-b  fixed w-screen z-10 text-white backdrop-blur-md">
-      <div className="mx-auto ">
+    <nav className="px-2 bg-primary_bg/80 border-white border-opacity-10 border-b fixed w-screen z-10 text-white backdrop-blur-md">
+      <div className="max-w-7xl mx-auto relative">
         <motion.div
           className="absolute bg-white rounded-md h-[2px] bottom-0 hidden md:block"
           style={{
@@ -76,7 +76,7 @@ export default function Navbar() {
           ))}
         </div>
         {/* mobile screen */}
-        <div className=" mx-auto h-16  md:hidden flex justify-between items-center">
+        <div className="mx-auto h-16 md:hidden flex justify-between items-center">
           <Link href="#home" className="text-xl font-bold">
             <Image src="/mlogo.png" width={24} height={24} alt="logo" />
           </Link>
@@ -89,7 +89,7 @@ export default function Navbar() {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden  text-center ">
+          <div className="md:hidden text-center">
             <div className="mx-auto pt-2 pb-3 space-y-1">
               {navLinks.map((link) => (
                 <a
