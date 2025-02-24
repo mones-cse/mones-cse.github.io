@@ -19,7 +19,7 @@ const ProjectCard = ({
 }) => (
   <div className="hover:scale-[101%] transition-all duration-300">
     <GlowingCard>
-      <div className="w-full h-48 relative overflow-hidden bg-white/10">
+      <div className="w-full h-48 relative overflow-hidden bg-white/10 ">
         <Image
           src={image}
           alt={`${title} demo`}
@@ -65,11 +65,11 @@ const Projects = () => {
   const projects = portfolioData.projects;
   return (
     <AnimateOnScroll id="project">
-      <section className="pt-4 mb-10 px-2.5 max-w-2xl  mx-auto">
+      <section className="max-w-lg lg:max-w-3xl pt-4 mb-10 px-2.5  mx-auto">
         <h2 className="text-3xl font-bold mb-4 text-center text-primary_text">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

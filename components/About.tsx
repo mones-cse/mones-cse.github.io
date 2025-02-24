@@ -3,7 +3,7 @@ import { AnimateOnScroll } from "./AnimateOnScroll";
 const About = () => {
   return (
     <AnimateOnScroll id="about">
-      <div className="text-white/50 font-light flex flex-col max-w-2xl mx-auto justify-center text-center gap-4 mb-10 pt-4 px-2.5">
+      <div className=" max-w-2xl lg:max-w-3xl text-white/50 font-light flex flex-col  mx-auto justify-center text-center gap-4 mb-10 pt-4 px-2.5">
         <p className="text-3xl font-semibold text-white">About</p>
         <p>
           I am focused on JS, TS, React, Next.js, Node.js, and Python, working

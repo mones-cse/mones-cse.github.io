@@ -6,9 +6,9 @@ const Experience = () => {
   const experienceData = portfolioData.experience;
   return (
     <AnimateOnScroll id="experience">
-      <div className="max-w-2xl mx-auto text-center text-primary_text flex flex-col gap-2 mb-10  pt-4 px-2.5">
+      <div className="max-w-2xl lg:max-w-3xl mx-auto text-center text-primary_text flex flex-col gap-2 mb-10  pt-4 px-2.5">
         <p className="text-3xl font-semibold mb-4">Experience</p>
-        <div className="grid gird-cols-1 md:grid-cols-2 gap-4 mx-auto text-start w-full">
+        <div className="grid gird-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 mx-auto text-start w-full">
           {experienceData.map((data, index) => (
             <GlowingCard key={index}>
               <div className="flex flex-col">

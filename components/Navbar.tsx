@@ -45,7 +45,7 @@ export default function Navbar() {
 
   return (
     <nav className="px-2 bg-primary_bg/80 border-white border-opacity-10 border-b fixed w-screen z-10 text-white backdrop-blur-md">
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-5xl mx-auto relative">
         <motion.div
           className="absolute bg-white rounded-md h-[2px] bottom-0 hidden md:block"
           style={{
