@@ -158,9 +158,9 @@ const Hero = () => {
         <div className="col-start-2 col-span-6 sm:col-start-0 sm:col-span-6 h-full min-h-16 border-white border-opacity-10  border-b border-l border-r relative flex justify-center py-4 px-8">
           <Stars />
           <p className=" text-lg font-extralight">
-            I am a Senior Software Engineer with 9+ years of experience in
-            JavaScript, React, Node.js, and API development, delivering scalable
-            and efficient solutions.
+            I am a Software Engineer with 9+ years of experience in JavaScript,
+            React, Node.js, and API development, delivering scalable and
+            efficient solutions.
           </p>
         </div>
         <div className="hidden sm:block h-full border-white border-opacity-10 border-b">
@@ -196,7 +196,7 @@ const Hero = () => {
               className="px-6 py-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full border-white border-opacity-10 shadow-sm hover:scale-105 transition-all duration-300"
             >
               <span className="relative text-white font-medium">
-                Download CV
+                Download Resume
               </span>
             </Link>
           </div>

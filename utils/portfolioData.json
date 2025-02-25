@@ -57,13 +57,6 @@
   ],
   "projects": [
     {
-      "title": "DMS",
-      "description": "Developed document management system for a bank, this system allows secure role based access to digital records and converts physical documents to digital using Tesseract OCR",
-      "technologies": ["React", "TypeScript", "Base Web", "Tesseract"],
-      "link": "#",
-      "image": "/dms-bg.png"
-    },
-    {
       "title": "Dolpin",
       "description": "A decentralized and encrypted storage layer built with IPFS / Filecoin, enabling secure file sharing. Designed to back up valuable NFTs and digital assets with enhanced privacy and security.",
       "technologies": ["React", "IPFS", "Node", "AWS", "TypeScript"],
@@ -76,6 +69,13 @@
       "technologies": ["React", "D3.js", "Node.js", "Python", "Ant Design"],
       "link": "https://example.com/project3",
       "image": "/cramstack-bg.png"
+    },
+    {
+      "title": "DMS",
+      "description": "Developed document management system for a bank, this system allows secure role based access to digital records and converts physical documents to digital using Tesseract OCR",
+      "technologies": ["React", "TypeScript", "Base Web", "Tesseract"],
+      "link": "#",
+      "image": "/dms-bg.png"
     }
   ],
   "experience": [
