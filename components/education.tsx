@@ -1,13 +1,15 @@
-import portfolioData from "../data/portfolioData.json";
-import { AnimateOnScroll } from "./AnimateOnScroll";
-import GlowingCard from "./GlowingCard";
+import { portfolioData } from "@/data/portfolioData";
+import { AnimateOnScroll } from "./ui/AnimateOnScroll";
+import GlowingCard from "./ui/GlowingCard";
+import CustomSection from "./ui/CustomSection";
 
 const Education = () => {
   const eductionData = portfolioData.education;
   return (
     <AnimateOnScroll id={"education"}>
-      <div className="max-w-2xl lg:max-w-3xl flex flex-col items-center  mx-auto px-2.5  pt-4 pb-10">
-        <h1 className="text-4xl mb-4 text-primary_text">Education</h1>
+      {/* <div className="max-w-2xl lg:max-w-3xl flex flex-col items-center  mx-auto px-2.5  pt-4 pb-10">
+        <h1 className="text-4xl mb-4 text-primary_text">Education</h1> */}
+      <CustomSection title="Education">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
           {eductionData.map((item, index) => (
             <GlowingCard key={index}>
@@ -21,7 +23,7 @@ const Education = () => {
             </GlowingCard>
           ))}
         </div>
-      </div>
+      </CustomSection>
     </AnimateOnScroll>
   );
 };

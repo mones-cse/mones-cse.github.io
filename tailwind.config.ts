@@ -14,6 +14,8 @@ export default {
         primary_bg: "#1A1A1A",
         primary_text: "#FAFAF6",
         secondary_text: "#a3a3a3",
+        theme_primary: "#feb995",
+        theme_secondary: "#FF6347",
       },
     },
   },

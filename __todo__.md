@@ -1,9 +1,8 @@
-- footer link add
-- light effect 
-- experience spacing change
-- Projects spacing change
-- all component need to show info from json data
-- mobile friendly
-- tab friendly 
-- desktop friendly 
-- partical effect 
+- UPDATE EXPERIENCE HIGHLIGHT INFORMATION [x]
+- ADD PERSONAL DEVELOPMENT
+- ADD MEJOR IN MASTERS
+- VIDEO DOLPIN PROJECT
+- RUN AMMAR LINK PROJECT
+- RUN NLQ PROJECT
+- ASK SAKIB ABOUT SCREENSHOT
+- ADD PERSONAL PROJECT SECTION

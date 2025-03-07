@@ -1,7 +1,7 @@
 // "use client";
-import BlinkingLight from "./BlinkingLight";
-import CustomParticles from "./CustomParticles";
-import FancyText from "./FancyText";
+import BlinkingLight from "./ui/BlinkingLight";
+import CustomParticles from "./ui/CustomParticles";
+import FancyText from "./ui/FancyText";
 import Link from "next/link";
 
 const Stars = () => {

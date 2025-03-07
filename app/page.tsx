@@ -1,6 +1,6 @@
 import About from "@/components/About";
 import AwardsSection from "@/components/Awards";
-import BlobEffect from "@/components/BlobEffect";
+import BlobEffect from "@/components/ui/BlobEffect";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Footer from "@/components/footer";

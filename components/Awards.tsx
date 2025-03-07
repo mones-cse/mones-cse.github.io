@@ -1,21 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import { portfolioData } from "@/data/portfolioData";
+import type { Award } from "@/data/portfolioData";
+import { AnimateOnScroll } from "./ui/AnimateOnScroll";
+import CustomSection from "./ui/CustomSection";
 
-import portFolioData from "../data/portfolioData.json";
-import { AnimateOnScroll } from "./AnimateOnScroll";
-import GlowingCard from "./GlowingCard";
-
-// Types
-interface CardProps {
-  title: string;
-  organization: string;
-  year: string;
-  description: string;
-  logo: string;
-}
+import GlowingCard from "./ui/GlowingCard";
 
 // AwardCard Component - Handles the content structure
-const AwardCard: React.FC<CardProps> = ({
+const AwardCard: React.FC<Award> = ({
   title,
   description,
   logo,
@@ -26,13 +19,13 @@ const AwardCard: React.FC<CardProps> = ({
     <GlowingCard>
       <div className="flex items-start gap-4 w-full">
         {logo && (
-          <Image src={logo} alt={`${title} logo`} width={48} height={48} />
+          <Image src={logo} alt={`${title} logo`} width={64} height={64} />
         )}
         <div className="flex-grow">
           <p className="text-xs font-semibold text-primary_text mb-1">
             {title}
           </p>
-          <h3 className="text-xs text-primary_text font-medium">
+          <h3 className="text-xs text-theme_primary font-medium">
             {organization}
           </h3>
           <p className="text-xs text-secondary_text font-light">
@@ -46,9 +39,9 @@ const AwardCard: React.FC<CardProps> = ({
 };
 
 // Cards Grid Component
-const CardsGrid: React.FC<{ awards: CardProps[] }> = ({ awards }) => {
+const CardsGrid: React.FC<{ awards: Award[] }> = ({ awards }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full">
       {awards.map((award, index) => (
         <AwardCard key={index} {...award} />
       ))}
@@ -58,14 +51,13 @@ const CardsGrid: React.FC<{ awards: CardProps[] }> = ({ awards }) => {
 
 // Main Awards Section Component
 const AwardsSection: React.FC = () => {
-  const awardData = portFolioData.awards;
+  const awardData = portfolioData.awards;
 
   return (
     <AnimateOnScroll id="awards">
-      <section className="max-w-2xl lg:max-w-3xl flex flex-col items-center justify-center pt-4 px-2.5 mx-auto mb-10">
-        <h1 className="text-4xl mb-4 text-primary_text">Awards</h1>
+      <CustomSection title="Awards" className="">
         <CardsGrid awards={awardData} />
-      </section>
+      </CustomSection>
     </AnimateOnScroll>
   );
 };
