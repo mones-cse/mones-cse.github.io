@@ -1,5 +1,5 @@
 import GlowingCard from "./GlowingCard";
-import portfolioData from "../utils/portfolioData.json";
+import portfolioData from "../data/portfolioData.json";
 
 import Image from "next/image";
 import { AnimateOnScroll } from "./AnimateOnScroll";
@@ -31,7 +31,9 @@ const ProjectCard = ({
 
       <div className="py-2 ">
         <div className="flex justify-between items-start">
-          <h3 className="text-xl font-semibold text-white mb-2">{title}</h3>
+          <h3 className="text-xl font-semibold text-primary_text mb-2">
+            {title}
+          </h3>
           {link && (
             <a
               href={link}

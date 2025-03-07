@@ -44,7 +44,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="px-2 bg-primary_bg/80 border-white border-opacity-10 border-b fixed w-screen z-10 text-white backdrop-blur-md">
+    <nav className="px-2 bg-primary_bg/40 border-white border-opacity-10 border-b fixed w-screen z-10 text-white backdrop-blur-md">
       <div className="max-w-5xl mx-auto relative">
         <motion.div
           className="absolute bg-white rounded-md h-[2px] bottom-0 hidden md:block"
@@ -65,8 +65,9 @@ export default function Navbar() {
         {/* full screen */}
         <div className="mx-auto h-16 hidden md:flex justify-around items-center gap-4">
           {navLinks.map((link) => (
-            <div key={link.href} className="w-full text-center">
+            <div key={link.href} className="w-full text-center h-full">
               <a
+                className="text-white h-full  flex justify-center items-center"
                 href={link.href}
                 onClick={(e) => handleLinkClick(e, link.href, link.id)}
               >

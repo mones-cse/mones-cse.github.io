@@ -1,8 +1,10 @@
-import React from "react";
 import Image from "next/image";
-import portFolioData from "../utils/portfolioData.json";
-import GlowingCard from "./GlowingCard";
+import React from "react";
+
+import portFolioData from "../data/portfolioData.json";
 import { AnimateOnScroll } from "./AnimateOnScroll";
+import GlowingCard from "./GlowingCard";
+
 // Types
 interface CardProps {
   title: string;
@@ -27,12 +29,16 @@ const AwardCard: React.FC<CardProps> = ({
           <Image src={logo} alt={`${title} logo`} width={48} height={48} />
         )}
         <div className="flex-grow">
-          <p className="text-xs text-primary_text">{title}</p>
-          <h3 className="text-xs text-primary_text ">{organization}</h3>
+          <p className="text-xs font-semibold text-primary_text mb-1">
+            {title}
+          </p>
+          <h3 className="text-xs text-primary_text font-medium">
+            {organization}
+          </h3>
           <p className="text-xs text-secondary_text font-light">
             {description}
           </p>
-          <p className="text-xs text-secondary_text font-light">{year}</p>
+          <p className="text-xs text-primary_text font-light">{year}</p>
         </div>
       </div>
     </GlowingCard>

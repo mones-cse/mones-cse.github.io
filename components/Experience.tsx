@@ -1,5 +1,5 @@
 import GlowingCard from "./GlowingCard";
-import portfolioData from "../utils/portfolioData.json";
+import portfolioData from "../data/portfolioData.json";
 import { AnimateOnScroll } from "./AnimateOnScroll";
 
 const Experience = () => {

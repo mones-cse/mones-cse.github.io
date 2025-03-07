@@ -1,4 +1,4 @@
-import portfolioData from "../utils/portfolioData.json";
+import portfolioData from "../data/portfolioData.json";
 import { AnimateOnScroll } from "./AnimateOnScroll";
 import GlowingCard from "./GlowingCard";
 

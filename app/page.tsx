@@ -1,18 +1,19 @@
+import About from "@/components/About";
+import AwardsSection from "@/components/Awards";
+import BlobEffect from "@/components/BlobEffect";
+import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import Footer from "@/components/footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
-import AwardsSection from "@/components/Awards";
-import Education from "@/components/Education";
-import Footer from "@/components/footer";
-import BlobEffect from "@/components/BlobEffect";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <BlobEffect />
+
       <main className="bg-primary_bg w-full">
         <div className="container max-w-7xl mx-auto relative">
           <Hero />
@@ -23,6 +24,7 @@ export default function Home() {
           <Education />
         </div>
       </main>
+
       <Footer />
     </>
   );
