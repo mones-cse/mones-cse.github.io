@@ -1,9 +1,9 @@
 {
   "about": [
-    "I am focused on JS, TS, React, Next.js, Node.js, and Python, working across both front-end and back-end development. Over the years, I’ve worked with startups, enterprises, government organizations, and financial institutions, developing solutions ranging from SaaS platforms to secure document management systems, analytical platforms with natural language querying (NLQ), and Web3 solutions leveraging IPFS.",
+    "I am focused on JS, TS, React, Next.js, Node.js, and Python, working across both front-end and back-end development. Over the years, I've worked with startups, enterprises, government organizations, and financial institutions, developing solutions ranging from SaaS platforms to secure document management systems, analytical platforms with natural language querying (NLQ), and Web3 solutions leveraging IPFS.",
     "I thrive on research and solving problems, from building architectures to designing innovative solutions, with experience deploying projects using Docker on AWS and GCP. My work has been recognized with awards such as the National ICT Award and Microsoft Imagine Cup. I was also part of the Rockstart AI Accelerator in the Netherlands and the LongHash X Accelerator for Web3 innovations.",
-    "With a Master’s and Bachelor’s in Computer Science and Engineering, I remain committed to learning and delivering impactful solutions tailored to real-world needs.",
-    "Let’s build something exceptional together!"
+    "With a Master's and Bachelor's in Computer Science and Engineering, I remain committed to learning and delivering impactful solutions tailored to real-world needs.",
+    "Let's build something exceptional together!"
   ],
   "education": [
     {
@@ -17,9 +17,41 @@
       "year": "2010 - 2015"
     }
   ],
+  "certifications": [
+    {
+      "title": "Front End Certification",
+      "organization": "FreeCodeCamp",
+      "year": ""
+    },
+    {
+      "title": "Data Visualization Certification",
+      "organization": "FreeCodeCamp",
+      "year": ""
+    },
+    {
+      "title": "JavaScript Algorithms and Data Structures",
+      "organization": "FreeCodeCamp",
+      "year": ""
+    }
+  ],
+  "skills": {
+    "frontend": [
+      "TypeScript",
+      "React",
+      "Next.JS",
+      "Ant Design",
+      "Base Web",
+      "D3.js"
+    ],
+    "backend": ["Node.js (Express.js)", "Python (Flask, Django)"],
+    "database": ["SQL", "MySQL", "PostgreSQL", "MongoDB"],
+    "devops": ["Docker", "AWS", "GCP"],
+    "tools": ["Git", "Jira", "Notion", "Figma", "Photoshop"],
+    "web3": ["IPFS", "Filecoin"]
+  },
   "awards": [
     {
-      "title": "Longhash X Accelerator",
+      "title": "LongHash X Accelerator",
       "organization": "Dosier",
       "description": "Decentralized content delivery using Web3 technology (Singapore).",
       "year": "2022",
@@ -47,6 +79,13 @@
       "logo": "/awards/logo-e27.png"
     },
     {
+      "title": "Digital Winner",
+      "organization": "Cramstack",
+      "description": "Search-driven data analytics (NLQ) platform (Telenor).",
+      "year": "2017",
+      "logo": "/awards/logo-telenor.png"
+    },
+    {
       "title": "Microsoft Imagine Cup 2015",
       "organization": "Karigor",
       "description": "National Champion for creating 'Smoking Bad' (3D side-scroller).",
@@ -65,45 +104,151 @@
     {
       "title": "Dolpin",
       "description": "A decentralized and encrypted storage layer built with IPFS / Filecoin, enabling secure file sharing. Designed to back up valuable NFTs and digital assets with enhanced privacy and security.",
-      "technologies": ["React", "IPFS", "Node", "AWS", "TypeScript"],
-      "link": "https://example.com/project2",
+      "technologies": [
+        "React",
+        "IPFS",
+        "Node",
+        "AWS",
+        "TypeScript",
+        "Django",
+        "Ant Design",
+        "Express"
+      ],
+      "link": "https://dolpin.io",
       "image": "/dolpin-bg.png"
     },
     {
       "title": "NLQ",
       "description": "Developed an analytics platform with a natural language-driven search interface, enabling users to analyze and visualize data with no learning curve. Designed to simplify data insights through intuitive querying & visualization.",
-      "technologies": ["React", "D3.js", "Node.js", "Python", "Ant Design"],
+      "technologies": [
+        "React",
+        "D3.js",
+        "Node.js",
+        "Python",
+        "Ant Design",
+        "Django",
+        "Express"
+      ],
       "link": "https://example.com/project3",
       "image": "/cramstack-bg.png"
     },
     {
       "title": "DMS",
-      "description": "Developed document management system for a bank, this system allows secure role based access to digital records and converts physical documents to digital using Tesseract OCR",
-      "technologies": ["React", "TypeScript", "Base Web", "Tesseract"],
+      "description": "Developed document management system for a bank, this system allows secure role based access to digital records and converts physical documents to digital using Tesseract OCR, streamlining document management and improving efficiency.",
+      "technologies": ["React", "TypeScript", "Base Web", "Tesseract OCR"],
       "link": "#",
       "image": "/dms-bg.png"
     }
   ],
   "experience": [
     {
-      "title": "Co-Founder, Technical Lead",
+      "location": "Remote Hybrid, Dhaka",
+      "highlights": [
+        "Led system architecture and product development, managing teams at Dolphin.io.",
+        "Built full-stack apps with React, Ant Design, Node.js, Express, Django, IPFS and PostgreSQL",
+        "Developed a Web3 cloud storage and document management ecosystem handling over 10 million files.",
+        "Led R&D on Web3 solutions using IPFS, including encryption and decryption of IPFS content.",
+        "Deployed backend, frontend, and decentralized IPFS infrastructure on AWS."
+      ],
+      "technologies": [
+        "IPFS",
+        "Django",
+        "Express.js",
+        "React",
+        "Ant Design",
+        "AWS"
+      ],
+      "position": "Co-Founder, Technical Lead",
       "company": "Dosier",
-      "date": "2022-2024"
+      "date": "07/2022 - 06/2024"
     },
     {
-      "title": "Technical Lead",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Conducted requirement analysis and developed frontend solutions using React.",
+        "Performed database design."
+      ],
+      "technologies": ["React", "Database Design"],
+      "position": "Senior Software Engineer",
+      "company": "Dosier",
+      "date": "02/2022 - 06/2022"
+    },
+    {
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Developed a framework for context-based Natural Language Query (NLQ) suggestions.",
+        "Designed and implemented a secure on-premise document management system for local bank, featuring a document pipeline with Tesseract OCR for processing 100k documents, along with role-based access controls.",
+        "Automated COVID-19 data integration and developed daily chart generation for pandemic analytics on an official government website."
+      ],
+      "technologies": [
+        "Tesseract OCR",
+        "Django",
+        "Express.js",
+        "React",
+        "MySQL"
+      ],
+      "position": "Technical Lead",
       "company": "Cramstack",
-      "date": "2017-2022"
+      "date": "01/2021 - 01/2022"
     },
     {
-      "title": "Software Engineer",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "R&D on a module to convert natural language-based queries to SQL queries like MySQL, and MSSQL.",
+        "Refactored the system to a microservice architecture, improving scalability and maintainability.",
+        "Migrated backend services to Docker and Docker Compose, streamlining deployment processes on GCP."
+      ],
+      "technologies": [
+        "Django",
+        "Express.js",
+        "Docker",
+        "GCP",
+        "SQL",
+        "Microservices"
+      ],
+      "position": "Senior Software Engineer",
+      "company": "Cramstack",
+      "date": "01/2019 - 12/2020"
+    },
+    {
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Performed requirement analysis and developed microservices using Flask, Django, D3.js, and ReactJS."
+      ],
+      "technologies": ["Flask", "Django", "D3.js", "React"],
+      "position": "Software Engineer",
+      "company": "Cramstack",
+      "date": "02/2017 - 12/2018"
+    },
+    {
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Contributed to the development of The Vault, a CRM system for wealth managers.",
+        "Used MeteorJS, ReactJS, and MongoDB for core features.",
+        "Assisted with D3.js integration for data visualization and MixPanel for tracking user interactions."
+      ],
+      "technologies": ["MeteorJS", "ReactJS", "MongoDB", "D3.js", "MixPanel"],
+      "position": "Software Engineer",
       "company": "Inovio",
-      "date": "2016-2016"
+      "date": "01/2016 - 06/2016"
     },
     {
-      "title": "Game Developer",
+      "location": "Dhaka, Bangladesh",
+      "highlights": [
+        "Developed mobile games like 'Anna & Fumbles', 'Cricket Career World Cup', and 'Cricket Career BigInnings' using Unity3D."
+      ],
+      "technologies": ["Unity3D"],
+      "position": "Game Developer",
       "company": "Pechas Game Studio",
-      "date": "2014-2015"
+      "date": "07/2014 - 05/2015"
     }
-  ]
+  ],
+  "contact": {
+    "email": "mones.cse@gmail.com",
+    "phone": "+8801886926228",
+    "linkedin": "https://www.linkedin.com/in/monesul/",
+    "github": "https://github.com/mones-cse/",
+    "twitter": "https://x.com/mones_cse",
+    "location": "Dhaka, Bangladesh"
+  }
 }
