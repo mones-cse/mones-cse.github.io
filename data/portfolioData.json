@@ -182,11 +182,12 @@
         "Created role-based access controls and audit logging for regulatory compliance"
       ],
       "technologies": [
+        "React",
         "Tesseract OCR",
         "Django",
         "Express.js",
-        "React",
-        "MySQL"
+        "SQL",
+        "Ant Design"
       ],
       "location": "Dhaka, Bangladesh"
     },
@@ -203,6 +204,7 @@
         "Created power analytics platform for Bangladesh Power Ministry, partnering with BCG."
       ],
       "technologies": [
+        "React",
         "Django",
         "Express.js",
         "Docker",
@@ -223,7 +225,7 @@
         "Created interactive data visualizations with D3.js and ReactJS interfaces.",
         "Implemented Docker containerization and optimized GCP deployments."
       ],
-      "technologies": ["Flask", "Django", "D3.js", "React", "Bootstrap"],
+      "technologies": ["React", "Flask", "Django", "D3.js", "Bootstrap"],
       "location": "Dhaka, Bangladesh"
     },
     {
