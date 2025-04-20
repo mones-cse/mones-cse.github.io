@@ -18,7 +18,6 @@ const AwardCard: React.FC<AwardCardProps> = ({
   logo,
   organization,
   year,
-  link,
   onClick,
 }) => {
   return (
