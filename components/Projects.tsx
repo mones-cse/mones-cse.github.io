@@ -1,3 +1,4 @@
+"use client";
 import GlowingCard from "./ui/GlowingCard";
 import portfolioData from "../data/portfolioData.json";
 import CustomSection from "./ui/CustomSection";
@@ -20,7 +21,11 @@ const ProjectCard = ({
   image: string;
 }) => (
   <div className="hover:scale-[101%] transition-all duration-300 h-full ">
-    <GlowingCard>
+    <GlowingCard
+      onClick={() => {
+        window.open(link, "_blank");
+      }}
+    >
       <div className="flex flex-col h-full">
         <div className="w-full h-48 relative overflow-hidden bg-white/10">
           <Image

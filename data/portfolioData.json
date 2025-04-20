@@ -55,42 +55,48 @@
       "organization": "Dosier",
       "description": "Decentralized content delivery using Web3 technology (Singapore).",
       "year": "2022",
-      "logo": "/awards/logo-long-hash.png"
+      "logo": "/awards/logo-long-hash.png",
+      "link": "https://www.longhash.vc/accelerator"
     },
     {
       "title": "National ICT Award",
       "organization": "Cramstack",
       "description": "Power analytics for Bangladesh's power ministry (Big Data).",
       "year": "2019",
-      "logo": "/awards/logo-ict.png"
+      "logo": "/awards/logo-ict.png",
+      "link": "https://bnia.basis.org.bd/win/winner-2019"
     },
     {
       "title": "Rockstart AI Accelerator",
       "organization": "Cramstack",
       "description": "Search-driven data analytics platform (Netherlands Batch 2).",
       "year": "2018",
-      "logo": "/awards/logo-rock-start.png"
+      "logo": "/awards/logo-rock-start.png",
+      "link": "https://innovationorigins.com/en/meet-the-second-batch-of-startups-from-europes-first-ai-accelerator-in-den-bosch/"
     },
     {
       "title": "Echelon 100 National Champion",
       "organization": "Cramstack",
       "description": "Search-driven data analytics (NLQ) platform (Singapore).",
       "year": "2018",
-      "logo": "/awards/logo-e27.png"
+      "logo": "/awards/logo-e27.png",
+      "link": "https://www.daily-sun.com/post/302314/Bangladesh-to-participate-in-Echelon-Asia-"
     },
     {
       "title": "Microsoft Imagine Cup 2015",
       "organization": "Karigor",
       "description": "National Champion for creating 'Smoking Bad' (3D side-scroller).",
       "year": "2015",
-      "logo": "/awards/logo-imagine-cup.png"
+      "logo": "/awards/logo-imagine-cup.png",
+      "link": "https://imaginecup.microsoft.com/en-us/Team/cd26a37f-4909-40ac-8b57-455525e4b1a8"
     },
     {
       "title": "Microsoft Imagine Cup 2014",
       "organization": "Karigor",
       "description": "National Champion for creating '!Prince Charming' (3D FPS game).",
       "year": "2014",
-      "logo": "/awards/logo-imagine-cup.png"
+      "logo": "/awards/logo-imagine-cup.png",
+      "link": "https://www.prothomalo.com/technology/%E0%A6%AC%E0%A6%BF%E0%A6%9C%E0%A7%9F%E0%A7%80-%E0%A6%A4%E0%A6%BF%E0%A6%A8-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%95%E0%A6%B2%E0%A7%8D%E0%A6%AA%E0%A7%87%E0%A6%B0-%E0%A6%95%E0%A6%A5%E0%A6%BE"
     }
   ],
   "projects": [
@@ -122,15 +128,23 @@
         "Django",
         "Express"
       ],
-      "link": "https://example.com/project3",
+      "link": "#",
       "image": "/cramstack-bg.png"
     },
     {
       "title": "DMS",
       "description": "Developed document management system for a bank, this system allows secure role based access to digital records and converts physical documents to digital using Tesseract OCR",
       "technologies": ["React", "TypeScript", "Base Web", "Tesseract OCR"],
-      "link": "#",
+      "link": "https://youtu.be/luJ0k6Fbkug?si=U9klR9ZqFC_yUEVa",
       "image": "/dms-bg.png"
+    },
+    {
+      "title": "Aamar Link",
+      "description": "Built a centralized link management platform that enables users to organize and securely share important URLs. Includes an analytics dashboard.",
+
+      "technologies": ["React", "Next", "TypeScript", "AWS", "Ant Design"],
+      "link": "https://youtu.be/HHq1SpwyPMM?si=-Cj_AHgmg8gu_L17",
+      "image": "/aamarlink-bg.png"
     }
   ],
   "experience": [

@@ -8,6 +8,7 @@ interface GlowingCardProps {
   glowColor?: string;
   bgColor?: string;
   borderColor?: string;
+  onClick?: () => void;
 }
 
 const GlowingCard: React.FC<GlowingCardProps> = ({
@@ -17,9 +18,10 @@ const GlowingCard: React.FC<GlowingCardProps> = ({
   glowColor = "rgba(255,255,255,0.4)",
   bgColor = "rgb(23,23,23)",
   borderColor = "rgb(75,75,75)",
+  onClick,
 }) => {
   const cardRef = useRef<HTMLDivElement>(null);
-
+  console.log("onClick", onClick);
   // Intensity configuration based on prop
   const intensityConfig = {
     low: { outer: "600px", inner: "800px", opacity: "0.05" },
@@ -75,6 +77,7 @@ const GlowingCard: React.FC<GlowingCardProps> = ({
         } as React.CSSProperties
       }
       onMouseMove={handleMouseMove}
+      onClick={onClick}
     >
       <div
         className={`

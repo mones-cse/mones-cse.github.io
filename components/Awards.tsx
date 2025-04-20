@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { portfolioData } from "@/data/portfolioData";
@@ -7,17 +8,22 @@ import CustomSection from "./ui/CustomSection";
 
 import GlowingCard from "./ui/GlowingCard";
 
+interface AwardCardProps extends Award {
+  onClick?: () => void;
+}
 // AwardCard Component - Handles the content structure
-const AwardCard: React.FC<Award> = ({
+const AwardCard: React.FC<AwardCardProps> = ({
   title,
   description,
   logo,
   organization,
   year,
+  link,
+  onClick,
 }) => {
   return (
-    <GlowingCard>
-      <div className="flex items-start gap-4 w-full">
+    <GlowingCard onClick={onClick}>
+      <div className="flex items-start gap-4 w-full ">
         {logo && (
           <Image src={logo} alt={`${title} logo`} width={64} height={64} />
         )}
@@ -41,9 +47,17 @@ const AwardCard: React.FC<Award> = ({
 // Cards Grid Component
 const CardsGrid: React.FC<{ awards: Award[] }> = ({ awards }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full ">
       {awards.map((award, index) => (
-        <AwardCard key={index} {...award} />
+        <AwardCard
+          key={index}
+          {...award}
+          onClick={() => {
+            if ("link" in award && award.link) {
+              window.open(award.link, "_blank");
+            }
+          }}
+        />
       ))}
     </div>
   );

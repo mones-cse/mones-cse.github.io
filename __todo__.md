@@ -8,3 +8,4 @@
 - ADD PERSONAL PROJECT SECTION
 - ADD LINK OF CERTIFICATE
 - ADD LINK TO AWARDS
+- Check that using onClick instead of a tag cause any problem ?

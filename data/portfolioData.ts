@@ -29,6 +29,7 @@ interface Contact {
     description: string;
     year: string;
     logo: string;
+    link: string;
   }
   
   interface Project {
