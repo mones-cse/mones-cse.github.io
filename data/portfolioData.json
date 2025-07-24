@@ -148,6 +148,26 @@
     }
   ],
   "experience": [
+      {
+      "date": "07/2024 - 12/2024",
+      "position": "Co-Founder, Technical Owner",
+      "company": "Dosier",
+      "highlights": [
+        "Maintained backend infrastructure, ensured uptime, and optimized performance.",
+        "Fixed bugs across both frontend and backend codebases.",
+        "Provided technical support to users, especially for large file uploads.",
+        "Managed deployments, monitoring, and scaling of the system as needed."
+        
+      ],
+      "technologies": [
+        "PostgreSQL",
+        "Django",
+        "Express.js",
+        "React",
+        "AWS"
+      ],
+      "location": "Remote, Dhaka"
+    },
     {
       "date": "07/2022 - 06/2024",
       "position": "Co-Founder, Technical Lead",
@@ -172,6 +192,7 @@
       ],
       "location": "Remote Hybrid, Dhaka"
     },
+  
     {
       "date": "02/2022 - 06/2022",
       "position": "Senior Software Engineer",
